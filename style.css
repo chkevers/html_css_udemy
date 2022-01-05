@@ -1,0 +1,140 @@
+/* Navbar */
+
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(16, 121, 219);
+    line-height: 45px;
+}
+
+.navbar li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: tomato;
+}
+
+body {
+    background-color:turquoise;
+}
+
+h1 {
+    text-align: center;
+}
+img {
+    /* display: block; */
+    /* margin: 0 auto; */
+    /* width: 50; */
+    box-shadow: 2px 2px 30px 2px;
+}
+
+img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    /* transform:rotate(-20deg) */
+}
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    background-color: rgb(13, 148, 13);
+    color: white;
+    border: solid white 2px;
+    padding: 5px 10px;
+    margin-top: 50px
+}
+
+input[type=submit]:hover {
+    background-color:blueviolet;
+}
+
+
+
+form div{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: column;
+    /* width: 50%; */
+    padding: 10px 10px;
+    line-height: 30px;
+    
+}
+
+form h3,h4 {
+    text-align: center;
+}
+
+.div-form{
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    box-shadow: 3px 3px 10px 10px white;
+    width: 33%;
+    margin: 0 auto;
+    background-color: indianred;
+    align-items: center;
+}
+
+span {
+    color:goldenrod;
+}
+
+/* Test on on displaying when hovering */
+
+.div-text {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.div-text div{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    background: black;
+    color: white;
+    margin-left: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+    transform: translate(-50%, 50%)
+   }
+
+/* .div-text:hover{
+    cursor: pointer;
+} */
+
+.div-text:hover div{
+    width: 150px;
+    padding: 5px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+}
+
+hr {
+    border: 1px solid red;
+    /* border-radius: 100px; */
+}

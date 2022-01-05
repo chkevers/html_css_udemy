@@ -1,4 +1,12 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Uncial+Antiqua&display=swap');
+
 /* Navbar */
+nav {
+    position: sticky;
+    -webkit-position: sticky;
+    top: 10px;
+}
 
 .navbar {
     list-style: none;
@@ -6,11 +14,15 @@
     flex-direction: row;
     justify-content: space-around;
     background-color: rgb(16, 121, 219);
-    line-height: 45px;
+    line-height: 7vh;
+    border-radius: 10px;
 }
 
+
 .navbar li {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Pirata One', cursive;
+    font-family: 'Uncial Antiqua', cursive;
+    color: white;
 }
 
 .navbar li a {
@@ -20,6 +32,20 @@
 .navbar li a:hover {
     color: tomato;
 }
+
+.navbar li a:visited {
+    color: white;
+}
+
+.icon {
+    content: url("./navlogo.gif");
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    align-self: center;
+}
+
+/* Body */
 
 body {
     background-color:turquoise;

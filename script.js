@@ -8,3 +8,10 @@ butEvent.addEventListener('click', function(e) {
     console.log(inputText.value);
     console.log('Something is wrong dear');
 });
+
+
+$(document).ready(function(){
+  $("li").click(function(){
+    $(this).hide();
+  });
+});

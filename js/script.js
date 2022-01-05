@@ -9,9 +9,10 @@ butEvent.addEventListener('click', function(e) {
     console.log('Something is wrong dear');
 });
 
+// Tesdt for Jquery remove items when clicking on it 
 
-$(document).ready(function(){
-  $("li").click(function(){
-    $(this).hide();
-  });
-});
+// $(document).ready(function(){
+//   $("li").click(function(){
+//     $(this).hide();
+//   });
+// });

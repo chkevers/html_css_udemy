@@ -18,6 +18,12 @@ nav {
     border-radius: 10px;
 }
 
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+}
 
 .navbar li {
     font-family: 'Pirata One', cursive;

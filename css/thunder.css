@@ -15,3 +15,31 @@ button:hover {
     background-color: blue;
     cursor:pointer;
 }
+
+.anim {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    animation-name: animate1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes animate1 {
+    from {
+        width: 200px;
+        height: 200px;
+        top: 0;
+    }
+    to {
+        width: 600px;
+        height: 600px;
+        background-color: red;
+        top:400px
+
+    }
+}

@@ -16,7 +16,7 @@ button:hover {
     cursor:pointer;
 }
 
-.anim {
+/* .anim {
     background-color: purple;
     width: 200px;
     height: 200px;
@@ -42,4 +42,47 @@ button:hover {
         top:400px
 
     }
+} */
+/* 
+.anim2 {
+    background-color: seagreen;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    animation: animate2 2s forwards ease-in-out;
+    top:0;
+    left:0;
+}
+
+@keyframes animate2 {
+    to {
+     background-color: steelblue;
+    }
+
+} */
+
+.transit {
+    background: tomato;
+    width: 200px;
+    height: 200px;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+.transit:hover {
+    background: white;
+    border-radius: 50%;
+}
+.transfo {
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    transition: all 1s ease-in-out;
+}
+
+.transfo:hover {
+    /* transform:rotate(20deg; */
+    /* transform: translateX(300px); */
+    transform: translateX(75%);
 }

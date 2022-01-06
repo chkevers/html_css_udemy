@@ -11,3 +11,25 @@ span {
     font-size: 200px;
     color: steelblue;
 }
+
+/* nav {
+    transform: translateX(-2000px);
+    animation: navbar 2s forwards ease-in;
+}
+
+@keyframes navbar {
+    to {
+        transform:translateX(0)
+    }
+} */
+
+ul li {
+    opacity: 0;
+    animation: appear 2s forwards ease-in;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,5 @@
+.container {
+    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-gap:1rem; */
+    /* border: solid grey 2px */
+}

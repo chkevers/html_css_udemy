@@ -1,12 +1,36 @@
+/* Global styling */
+
 @import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
 
 :root {
     --primary-color: red;
     --secondary-color: blue;
     --dark-color: black;
-    --lght-color: white;
+    --light-color: white;
     --max-width: 1100px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5rem;
+    background: var(--light-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility styling */
 
 #nav-ack {
     border: solid red 2px;
@@ -14,9 +38,13 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 5fr;
+    grid-template-columns: 1fr 2fr 6fr;
     grid-gap:1rem;
-    border: solid grey 2px
+    border: solid grey 2px;
+    padding: 0 2rem;
+    max-width: var(--max-width);
+    margin: auto;
+    overflow: hidden;
 }
 
 .icon-cog {
@@ -44,7 +72,6 @@
     color: grey;
     margin: auto auto;
 }
-
 
 
 

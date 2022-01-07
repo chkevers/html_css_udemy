@@ -6,7 +6,7 @@
     --primary-color: red;
     --secondary-color: blue;
     --dark-color: black;
-    --light-color: white;
+    --light-color: rgb(233, 233, 233);
     --max-width: 1100px;
 }
 
@@ -31,28 +31,37 @@ ul {
 }
 
 /* Utility styling */
-
+/* Navbar */
 #nav-ack {
-    border: solid red 2px;
+    /* border: solid red 2px; */
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index:2;
+}
+
+#nav-ack .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    align-items: center;
+    /* grid-gap:1rem; */
+    border: solid grey 2px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 6fr;
-    grid-gap:1rem;
-    border: solid grey 2px;
-    padding: 0 2rem;
     max-width: var(--max-width);
     margin: auto;
+    /* padding: 0 2rem; */
     overflow: hidden;
+    height: 10vh;
 }
+
+
 
 .icon-cog {
     color:darkgreen;
-    display:flex;
-    justify-content: center;
-    align-items: center;
     font-size: 16px;
+    /* border: solid blue 2px; */
     
 }
 
@@ -63,9 +72,11 @@ ul {
 }
 
 .menu-social {
+    /* border: solid 2px red; */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
 }
 
 .icon-social {
@@ -73,8 +84,82 @@ ul {
     margin: auto auto;
 }
 
+.menu-pages {
+    display:flex;
+    /* flex-direction: row; */
+    justify-self: center;
+    justify-content: space-evenly;
+    /* border: solid 1px yellow; */
+    width: 100%;
+}
+
+.menu-pages li a {
+    color: rgb(5, 99, 177);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.menu-pages li a.current {
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+}
 
 
+.menu-pages li a:hover {
+    color: var(--dark-color);
+    background: white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
 
 
+/* Header */
 
+#showcase {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    /* padding: 2rem; */
+    position: relative;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 1fr;
+}
+
+
+#showcase:after {
+    content:'';
+    background: url('https://source.unsplash.com/random/2000x1200/?travel') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* opacity: 1; */
+    /* box-sizing: border-box; */
+    z-index: -1;
+    
+}
+
+.category {
+    border: solid 2px red;
+    max-height: 75vh;
+    max-width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    /* overflow-y: auto; */
+
+}
+
+.video-display {
+    border: solid 2px yellow;
+    background: url('https://source.unsplash.com/random/2000x1200/?cook') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+}

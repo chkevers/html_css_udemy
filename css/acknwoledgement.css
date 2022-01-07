@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+
+:root {
+    --primary-color: red;
+    --secondary-color: blue;
+    --dark-color: black;
+    --lght-color: white;
+    --max-width: 1100px;
+}
+
+#nav-ack {
+    border: solid red 2px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    grid-gap:1rem;
+    border: solid grey 2px
+}
+
+.icon-cog {
+    color:darkgreen;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    
+}
+
+.icon-cog > p {
+    content:'Acknowledgement';
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 30px;;
+}
+
+.menu-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-social {
+    color: grey;
+    margin: auto auto;
+}
+
+
+
+
+
+
+

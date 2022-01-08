@@ -126,7 +126,7 @@ ul {
     grid-template-rows: auto; */
     grid-gap: 1rem;
     padding: 2rem 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* Items Utilities */
@@ -181,7 +181,7 @@ ul {
     position: relative;
     height: 35vh;
     padding: 1rem;
-    border-radius: 50px;
+    border-radius: 5vh;
 }
 
 .ack-item2:before {
@@ -193,7 +193,7 @@ ul {
     height: 100%;
     width: 100%;
     z-index: -1;
-    border-radius: 50px;
+    border-radius: 5vh;
 }
 
 /* Item 3 specs */

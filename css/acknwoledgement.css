@@ -154,9 +154,9 @@ ul {
     background: rgba(0, 0, 0, 0.3);
     color: white;
     position: relative;
-    height: 30vh;
+    height: 35vh;
     padding: 1rem;
-    border-radius: 100px;
+    border-radius: 5vh;
 }
 
 .ack-item1:before {
@@ -169,7 +169,7 @@ ul {
     width: 100%;
     /* opacity: 0.7; */
     z-index: -1;
-    border-radius: 100px;
+    border-radius: 5vh;
 }
 
 /* Item 2 specs */
@@ -178,7 +178,7 @@ ul {
     background: rgba(0,0,0,0.4);
     color: white;
     position: relative;
-    height: 50vh;
+    height: 35vh;
     padding: 1rem;
     border-radius: 50px;
 }
@@ -195,13 +195,15 @@ ul {
     border-radius: 50px;
 }
 
+/* Item 3 specs */
+
 .ack-item3 {
     background: rgba(0, 0, 0, 0.4);
     color: white;
     position: relative;
     height: 35vh;
     padding: 1rem;
-    border-radius: 2vh;
+    border-radius: 5vh;
 }
 
 .ack-item3:before {
@@ -213,6 +215,13 @@ ul {
     height: 100%;
     width: 100%;
     z-index: -1;
+    border-radius: 5vh;
+}
+
+.ack-item3 > h1 {
+    font-size: 7vh; /* 5.7 fits */
+    line-height: 4.5vh;
+    text-align: center;
 }
 
 

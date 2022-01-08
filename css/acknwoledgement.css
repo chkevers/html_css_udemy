@@ -151,7 +151,6 @@ ul {
 /* Item 1 specs */
 
 .ack-item1 {
-    border: solid 2px green;
     background: rgba(0, 0, 0, 0.3);
     color: white;
     position: relative;

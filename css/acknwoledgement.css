@@ -114,52 +114,113 @@ ul {
 }
 
 
-/* Header */
 
-#showcase {
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    /* padding: 2rem; */
-    position: relative;
-    height: 75vh;
+/***** SECOND GRID WITH MULTIPLE OVERLAYS *****/
+
+
+/* Container specs */
+
+.ack-container {
     display: grid;
-    grid-template-columns: minmax(0,1fr) 1fr;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; */
+    grid-gap: 1rem;
+    padding: 2rem 2rem;
 }
 
+/* Items Utilities */
 
-#showcase:after {
-    content:'';
-    background: url('https://source.unsplash.com/random/2000x1200/?travel') no-repeat center center/cover;
+.flex-item {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 15px 2px black;
+}
+
+.flex-item > h1 {
+    padding-bottom: 2rem;
+    font-size: 7vh;
+}
+
+.flex-item > p {
+    /* padding: 1rem; */
+    font-size: 3vh;
+}
+
+/* Item 1 specs */
+
+.ack-item1 {
+    border: solid 2px green;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    position: relative;
+    height: 30vh;
+    padding: 1rem;
+    border-radius: 100px;
+}
+
+.ack-item1:before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    background: url('https://source.unsplash.com/random/2000x1200/?morocco') no-repeat center center/cover;
     height: 100%;
-    /* opacity: 1; */
-    /* box-sizing: border-box; */
+    width: 100%;
+    /* opacity: 0.7; */
     z-index: -1;
-    
+    border-radius: 100px;
 }
 
-.category {
-    border: solid 2px red;
-    max-height: 75vh;
-    max-width: 50%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 0 2rem;
-    box-sizing: border-box;
-    /* overflow-y: auto; */
+/* Item 2 specs */
 
+.ack-item2 {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    position: relative;
+    height: 50vh;
+    padding: 1rem;
+    border-radius: 50px;
 }
 
-.video-display {
-    border: solid 2px yellow;
-    background: url('https://source.unsplash.com/random/2000x1200/?cook') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 100%;
+.ack-item2:before {
+    content: '';
+    position: absolute;
+    background: url('https://source.unsplash.com/random/2000x1200/?cyprus') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.ack-item3 {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: relative;
+    height: 35vh;
+    padding: 1rem;
+    border-radius: 2vh;
+}
+
+.ack-item3:before {
+    content: '';
+    position: absolute;
+    background: url('https://source.unsplash.com/random/2000x1200/?tenerife') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* Responsive design */
+
+@media (min-width:1200px) {
+    .ack-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

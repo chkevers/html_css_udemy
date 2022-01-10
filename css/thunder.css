@@ -1,3 +1,83 @@
+/* Tree menu */
+/* (A) LIST TO MENU */
+.tree, .section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} 
+
+.tree {
+    background: green;
+    border: solid 2px greenyellow;
+}
+
+.tree li {
+    border-bottom: hotpink solid 2px;
+}
+
+.tree li:last-child {
+    border: 0;
+}
+
+/* (B) SUB-SECTIONS  */
+/* (B1) TOGGLE SHOW/HIDE */
+
+.section ul {
+    display: none;
+}
+
+.section input:checked ~ ul {
+    display: block;
+}
+
+
+/* (B1) HIDE CHECKBOX */
+.section input[type=checkbox] {
+    display: none;
+}
+
+/* (B3) ADD EXPAND/COLLAPSE ICON */
+.section {
+    position: relative;
+    padding-left: 35px;;
+}
+
+.section label:after {
+    content: '\0002B';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* padding: 10px; */
+    text-align: center;
+    font-size: 30px;
+    color: #f00;
+    transition: all 0.5s;
+}
+
+.section input:checked ~ label:after {
+    transform: rotate(45deg);
+    color: blue;
+}
+
+/* (B4) SUB-SECTION ITEMS */
+
+.section ul {
+    margin-top: 10px;
+}
+
+.section ul li {
+    color: white;
+}
+
+@media screen and (min-width:780px) {
+    .tree {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* Global Elements */
+
 h1 {
     color:red;
 }

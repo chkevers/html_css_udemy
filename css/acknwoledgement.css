@@ -177,15 +177,18 @@ ul {
 /* Item 2 specs */
 
 .ack-item2 {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.3);
     color: white;
     position: relative;
     height: 35vh;
     padding: 1rem;
     border-radius: 5vh;
+    
 }
+    
 
-.ack-item2:before {
+
+.ack-item2:after {
     content: '';
     position: absolute;
     background: url('https://source.unsplash.com/random/2000x1200/?cyprus') no-repeat center center/cover;
@@ -195,7 +198,21 @@ ul {
     width: 100%;
     z-index: -1;
     border-radius: 5vh;
+    /* animation: ease polygon forwards;
+    animation-duration: 10s; */
+    
+    
+    /* transform: skew(15deg); */
+    /* transform: translateX(200px, 0); */
 }
+
+/* @keyframes polygon {
+    100% {
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+} */
+
+
 
 /* Item 3 specs */
 

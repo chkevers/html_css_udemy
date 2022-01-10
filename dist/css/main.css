@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: skyblue;
+  color: #000; }
+
+header {
+  background: black;
+  color: #fff;
+  padding: 1rem; }
+  header h1 {
+    text-align: center; }
+
+.section {
+  padding: 3rem; }
+  .section h3 {
+    font-size: 2rem; }
+  .section-a {
+    background: steelblue; }
+  .section-b {
+    background: coral; }
+
+a {
+  color: green; }
+  a:hover {
+    color: purple; }
+
+.btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem; }
+
+.btn-light {
+  background: white; }
+  .btn-light:hover {
+    --webkit-transform: $property;
+    --ms-transform: $property;
+    transform: rotate(20deg);
+    background-color: gray; }
+
+.btn-dark {
+  background: black; }
+  .btn-dark:hover {
+    --webkit-transform: $property;
+    --ms-transform: $property;
+    transform: skew(-20deg);
+    background-color: gray; }
